@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actor name="Aron"
+      sprite="aron.png" width="24" height="32" treshold="4"
+      startdown="0" standdown="1" enddown="2"
+      startleft="3" standleft="4" endleft="5"
+      startright="6" standright="7" endright="8"
+      startup="9" standup="10" endup="11"
+      hp="4" mp="1" range="4" reach="1" />
+

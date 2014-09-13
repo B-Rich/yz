@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spell name="Fire"
+       sprite="fire.png" width="64" height="64" frames="4" treshold="2"
+       type="attack" mp="1" know="1" power="1" reach="2" />
+
