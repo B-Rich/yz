@@ -2,7 +2,7 @@
 *   DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 *
 *   This file is part of yz.
-*   Copyright (C) 2013 Surplus Users Ham Society
+*   Copyright (C) 2014 Surplus Users Ham Society
 *
 *   Yz is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -25,11 +25,11 @@
 #define WORLD_TILE_HEIGHT		32
 #define WORLD_NUM_TILES			5
 
-#define WORLD_EMPTY_TILE		2
-#define WORLD_FIELD_TILE		1
-#define WORLD_ROAD_TILE			1
-#define WORLD_BLOCK_TILE_LO		3
-#define WORLD_BLOCK_TILE_HI		4
+#define WORLD_EMPTY_TILE		1
+#define WORLD_FIELD_TILE		0
+#define WORLD_ROAD_TILE			0
+#define WORLD_BLOCK_TILE_LO		2
+#define WORLD_BLOCK_TILE_HI		3
 
 struct _PLAYER;
 

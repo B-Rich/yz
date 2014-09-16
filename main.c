@@ -2,7 +2,7 @@
 *   DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 *
 *   This file is part of yz.
-*   Copyright (C) 2013 Surplus Users Ham Society
+*   Copyright (C) 2014 Surplus Users Ham Society
 *
 *   Yz is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -36,6 +36,7 @@
 #include "strike.h"
 #include "battle.h"
 #include "game.h"
+#include "fps_timer.h"
 
 static SDL_Surface *screen;
 static int screen_width = DEFAULT_WINDOW_WIDTH;
@@ -88,17 +89,21 @@ int main(int argc, char *argv[])
     return 1;
 
   while (!done) {
-    
-    while (SDL_PollEvent(&event) ) {
 
-      if (event.type == SDL_QUIT) done = 1;
-      if (event.type == SDL_KEYDOWN)
-        update_game_keydown(event.key.keysym.sym);
+    if (fps_timer(60)) {
+    
+      while (SDL_PollEvent(&event) ) {
+
+        if (event.type == SDL_QUIT) done = 1;
+        if (event.type == SDL_KEYDOWN)
+          update_game_keydown(event.key.keysym.sym);
+
+      }
+
+      redraw();
+      flip();
 
     }
-
-    redraw();
-    flip();
 
   }
 

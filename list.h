@@ -2,7 +2,7 @@
 *   DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 *
 *   This file is part of Yz.
-*   Copyright (C) 2013 Surplus Users Ham Society
+*   Copyright (C) 2014 Surplus Users Ham Society
 *
 *   Yz is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU Lesser General Public License as published by

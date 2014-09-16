@@ -31,7 +31,7 @@ OUTPUT = yz
 	$(CC) $(CFLAGS) $(INCFLAGS) -c $*.c
 
 BASE_OBJS = list.o pixel.o sprite.o biot.o map.o draw_map.o draw_text.o \
-	    battle.o enemies.o strike.o magic.o ctrl.o
+	    battle.o enemies.o strike.o magic.o ctrl.o fps_timer.o
 OBJS = $(BASE_OBJS) world.o scanner.o actor.o player.o menu.o game.o main.o
 
 all: yz

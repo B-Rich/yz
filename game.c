@@ -2,7 +2,7 @@
 *   DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
 *
 *   This file is part of yz.
-*   Copyright (C) 2013 Surplus Users Ham Society
+*   Copyright (C) 2014 Surplus Users Ham Society
 *
 *   Yz is free software: you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -72,7 +72,7 @@ void init_game(void)
     exit(1);
   }
 
-  if ((game_world = new_world("world.png", 0,
+  if ((game_world = new_world("world.png", 1,
                          game_player->x, game_player->y,
                          300, 200,
 	                 DEFAULT_CELL_WIDTH, DEFAULT_CELL_HEIGHT)) == NULL) {

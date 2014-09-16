@@ -18,67 +18,10 @@
 *   along with Yz.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 
-#ifndef _player_h
-#define _player_h
+#ifndef _fps_timer_h
+#define _fps_timer_h
 
-#define PLAYER_DEFAULT_SPEED 6
-#define PLAYER_DEFAULT_TRESHOLD 4
-#define PLAYER_MAX_SPELLS 10
-
-typedef struct _PLAYER
-{
-   PLAYER_DIR dir;
-   int x, y;
-   int frame, counter, treshold;
-   ANIM_DIR anim_dir;
-   int speed;
-
-   ACTOR *h;
-   SPELL *spells[PLAYER_MAX_SPELLS];
-} PLAYER;
-
-PLAYER* new_player(
-  int x,
-  int y,
-  ACTOR *actor
-  );
-
-void init_player(
-  PLAYER *player,
-  int x,
-  int y,
-  ACTOR *actor
-  );
-
-void free_player(
-  PLAYER *player
-  );
-
-int move_player(
-  PLAYER *player,
-  WORLD *world
-  );
-
-int move_player_to(
-  PLAYER *player,
-  int x,
-  int y
-  );
-
-void draw_player(
-  PLAYER *player,
-  WORLD *world
-  );
-
-SPELL* get_player_spell(
-  PLAYER *player,
-  int index
-  );
-
-char* list_player_spells(
-  PLAYER *player,
-  char *str
-  );
+int fps_timer(int frame_rate);
 
 #endif
 
