@@ -60,7 +60,7 @@ void free_game(void)
   free_menu();
 }
 
-void init_game(void)
+void init_game(int tile_index)
 {
   if ((game_hero = load_actor_XML("aron.stat")) == NULL) {
     fprintf(stderr, "ERROR - Unable to initialize hero.\n");
@@ -72,7 +72,7 @@ void init_game(void)
     exit(1);
   }
 
-  if ((game_world = new_world("world.png", 1,
+  if ((game_world = new_world("world.png", tile_index,
                          game_player->x, game_player->y,
                          300, 200,
 	                 DEFAULT_CELL_WIDTH, DEFAULT_CELL_HEIGHT)) == NULL) {

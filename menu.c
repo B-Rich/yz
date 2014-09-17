@@ -94,6 +94,8 @@ void move_menu_option(int *index, int num_choices,
 
 static void game_menu_cb(int index)
 {
+  int ran;
+
   if (index < 0) {
     set_game_state(GAME_STATE_WORLD);
     return;
@@ -101,7 +103,8 @@ static void game_menu_cb(int index)
 
   switch (index) {
     case GAME_MENU_NEW    : deinit_game();
-			    init_game();
+                            ran = rand() % (WORLD_NUM_TILES / 4);
+			    init_game(ran * 4);
 		            break;
     case GAME_MENU_MAP    : set_game_state(GAME_STATE_MAP);
 			    break;

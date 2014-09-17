@@ -26,7 +26,7 @@
 #ifndef _draw_map_h
 #define _draw_map_h
 
-extern void draw_map(int x,int y, int w, int h,
+extern void draw_map(int x,int y, int w, int h, int opaque,
 		     Map *m, int sx, int sy, SPRITE *spr);
 
 #endif

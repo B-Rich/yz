@@ -29,7 +29,7 @@
 #include "map.h"
 #include "draw_map.h"
 
-void draw_map(int x,int y, int w, int h,
+void draw_map(int x,int y, int w, int h, int opaque,
 	      Map *m, int sx, int sy, SPRITE *spr)
 {
   int u,v,i,j;
@@ -51,7 +51,7 @@ void draw_map(int x,int y, int w, int h,
     for(u=sx/tw,i=x-(sx&(tw-1));i<w;u++,i+=tw)
     {
       index=tls[(int)(dat[v*mw+u])].index;
-      if(index)
+      if(index||opaque)
         draw_sprite(i,j,index,spr,x,y,w,h);
     }
   }

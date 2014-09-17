@@ -42,7 +42,7 @@ static SDL_Surface *screen;
 static int screen_width = DEFAULT_WINDOW_WIDTH;
 static int screen_height = DEFAULT_WINDOW_HEIGHT;
 
-int init(void)
+int init(int tile_index)
 {
   /* Initlaize SDL with video and sound if possible */
   if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
@@ -63,7 +63,7 @@ int init(void)
   }
 
   load_game();
-  init_game();
+  init_game(tile_index);
   set_sprite_context(screen, screen_width, screen_height);
 
   return 1;
@@ -84,8 +84,12 @@ int main(int argc, char *argv[])
 {
   SDL_Event event;
   int done = 0;
+  int tile_index = 0;
 
-  if (!init())
+  if (argc > 1)
+    tile_index = atoi(argv[1]);
+
+  if (!init(tile_index))
     return 1;
 
   while (!done) {

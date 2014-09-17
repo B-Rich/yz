@@ -23,7 +23,7 @@
 
 #define WORLD_TILE_WIDTH		32
 #define WORLD_TILE_HEIGHT		32
-#define WORLD_NUM_TILES			5
+#define WORLD_NUM_TILES			8
 
 #define WORLD_EMPTY_TILE		1
 #define WORLD_FIELD_TILE		0

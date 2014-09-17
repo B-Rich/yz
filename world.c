@@ -822,7 +822,7 @@ void draw_world(
   WORLD *world
   )
 {
-  draw_map(0, 0, window_width, window_height,
+  draw_map(0, 0, window_width, window_height, 1,
 	   world->map, world->x, world->y, world->tiles);
 }
 

@@ -36,7 +36,7 @@ extern PLAYER *game_player;
 
 int load_game(void);
 void free_game(void);
-void init_game(void);
+void init_game(int tile_index);
 void deinit_game(void);
 void set_game_state(GAME_STATE_TYPE s);
 GAME_STATE_TYPE get_game_state(void);
