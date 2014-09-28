@@ -27,7 +27,7 @@
 #include "sprite.h"
 
 #ifdef SDL_GFX
-#include <SDL/SDL_image.h>
+#include "SDL_image.h"
 #endif
 
 int window_width = DEFAULT_WINDOW_WIDTH;

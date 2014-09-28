@@ -22,7 +22,7 @@
 #define _pixel_h
 
 #ifdef SDL_GFX
-#include <SDL/SDL.h>
+#include "SDL.h"
 #else
 #include "load_png.h"
 #endif

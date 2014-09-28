@@ -20,9 +20,9 @@
 
 CC = gcc
 CFLAGS = -Wall -g -DSDL_CTRL -DSDL_GFX -DDEBUG
-INCFLAGS =
-LIBS = -lSDLmain -lSDL -lSDL_image -lexpat
-LDFLAGS = -L/opt/local/lib -lSDLmain
+INCFLAGS = -I/usr/include/SDL
+LIBS = -lSDL -lSDL_image -lexpat
+LDFLAGS = -L/opt/local/lib
 OUTPUT = yz
 
 .SUFFIXES: .o .c

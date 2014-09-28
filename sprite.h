@@ -29,7 +29,7 @@
 #define DEFAULT_WINDOW_HEIGHT	480
 
 #ifdef SDL_GFX
-#include <SDL/SDL.h>
+#include "SDL.h"
 #else
 #include <GL/gl.h>
 #include <GL/glx.h>

@@ -18,7 +18,7 @@
 *   along with Yz.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************/
 
-#include <SDL/SDL.h>
+#include "SDL.h"
 
 static float priv_time = 0.0;
 

@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include <SDL/SDL.h>
+#include "SDL.h"
 
 #include "defs.h"
 #include "sprite.h"

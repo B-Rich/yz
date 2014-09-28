@@ -22,7 +22,7 @@
 #define _ctrl_h
 
 #ifdef SDL_CTRL
-#include <SDL/SDL.h>
+#include "SDL.h"
 #else
 #include <X11/Xlib.h>
 #include <X11/keysym.h>
